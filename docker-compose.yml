@@ -1,0 +1,45 @@
+version: "3.3"
+
+services:
+  worker0:
+    image: lewuathe/tf-cluster
+    command: ["--job", "worker", "--task", "0"]
+    ports:
+      - "2222:2222"
+    volumes:
+      - ./config:/srv/tf-cluster/config
+    container_name: worker0
+  worker1:
+    image: lewuathe/tf-cluster
+    command: ["--job", "worker", "--task", "1"]
+    ports:
+      - "2223:2222"
+    volumes:
+      - ./config:/srv/tf-cluster/config
+    container_name: worker1
+  worker2:
+    image: lewuathe/tf-cluster
+    command: ["--job", "worker", "--task", "2"]
+    ports:
+      - "2224:2222"
+    volumes:
+      - ./config:/srv/tf-cluster/config
+    container_name: worker2
+  ps0:
+    image: lewuathe/tf-cluster
+    command: ["--job", "ps", "--task", "0"]
+    ports:
+      - "2225:2222"
+    volumes:
+      - ./config:/srv/tf-cluster/config
+    container_name: ps0
+  ps1:
+    image: lewuathe/tf-cluster
+    command: ["--job", "ps", "--task", "1"]
+    ports:
+      - "2226:2222"
+    volumes:
+      - ./config:/srv/tf-cluster/config
+    container_name: ps1
+
+
