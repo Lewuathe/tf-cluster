@@ -1,4 +1,4 @@
-tf-cluster [![Docker Pulls](https://img.shields.io/docker/pulls/lewuathe/tf-cluster.svg)](https://hub.docker.com/r/lewuathe/tf-cluster/)
+tf-cluster [![Build Status](https://travis-ci.org/Lewuathe/tf-cluster.svg?branch=master)](https://travis-ci.org/Lewuathe/tf-cluster) [![Docker Pulls](https://img.shields.io/docker/pulls/lewuathe/tf-cluster.svg)](https://hub.docker.com/r/lewuathe/tf-cluster/)
 ===
 
 TensorFlow distributed cluster on Docker
