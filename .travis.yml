@@ -11,5 +11,8 @@ before_install:
 install:
   - make build
 
+script:
+  - echo "No test to run"
+
 after_success:
   - make push
